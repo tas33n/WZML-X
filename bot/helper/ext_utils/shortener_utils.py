@@ -50,6 +50,13 @@ async def short_url(longurl, attempt=0):
                 "GET",
                 f"http://cutt.ly/api/api.php?key={_shortener_api}&short={longurl}",
             ).json()["url"]["shortLink"]
+        elif "earn4link.in" in _shortener:
+            res = cget(
+                "GET",
+                f"https://earn4link.in/api?api={_shortener_api}&url={quote(longurl)}",
+                verify=False
+            ).json()
+            return res.get("shortenedUrl", longurl)
         else:
             res = cget(
                 "GET",
