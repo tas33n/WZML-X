@@ -78,12 +78,10 @@ async def short_url(longurl, attempt=0):
             LOGGER.debug("Using earn4link.in shortener")
             response = cget(
                 "GET",
-                f"https://earn4link.in/api?api={_shortener_api}&url={quote(longurl)}",
-                verify=False
+                f"https://earn4link.in/api?api={_shortener_api}&url={quote(longurl)}"
             ).json()
             LOGGER.debug(f"earn4link.in response: {response}")
             return response.get("shortenedUrl", longurl)
-
         else:
             LOGGER.debug(f"Trying generic shortener: {_shortener}")
             response = cget(
