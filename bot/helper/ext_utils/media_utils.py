@@ -245,6 +245,7 @@ async def get_video_thumbnail(video_file, duration):
     duration = duration // 2
     cmd = [
         BinConfig.FFMPEG_NAME,
+        "xtra",
         "-hide_banner",
         "-loglevel",
         "error",

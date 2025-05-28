@@ -12,6 +12,8 @@ class Config:
     BOT_MAX_TASKS = 0
     BOT_PM = False
     CMD_SUFFIX = ""
+    CUSTOM_BOT_HEADER = "MisfitDev"
+    CUSTOM_BOT_HEADER_LINK = "https://t.me/misfitdev"
     DEFAULT_LANG = "en"
     DATABASE_URL = ""
     DEFAULT_UPLOAD = "rc"
@@ -29,9 +31,9 @@ class Config:
     MEDIA_STORE = True
     FORCE_SUB_IDS = ""
     GDRIVE_ID = ""
-    GD_DESP = "Uploaded with WZ Bot"
-    AUTHOR_NAME = "WZML-X"
-    AUTHOR_URL = "https://t.me/WZML_X"
+    GD_DESP = "Uploaded by Dzone"
+    AUTHOR_NAME = "Dzone"
+    AUTHOR_URL = "https://t.me/DownloaderZoneGateway"
     INSTADL_API = ""
     IMDB_TEMPLATE = ""
     INCOMPLETE_TASK_NOTIFIER = False
@@ -77,7 +79,6 @@ class Config:
     RCLONE_FLAGS = ""
     RCLONE_PATH = ""
     RCLONE_SERVE_URL = ""
-    SHOW_CLOUD_LINK = True
     RCLONE_SERVE_USER = ""
     RCLONE_SERVE_PASS = ""
     RCLONE_SERVE_PORT = 8080
@@ -88,6 +89,7 @@ class Config:
     SEARCH_LIMIT = 0
     SEARCH_PLUGINS = []
     SET_COMMANDS = True
+    SHOW_CLOUD_LINK = False
     STATUS_LIMIT = 10
     STATUS_UPDATE_INTERVAL = 15
     STOP_DUPLICATE = False
