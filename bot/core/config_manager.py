@@ -31,9 +31,9 @@ class Config:
     MEDIA_STORE = True
     FORCE_SUB_IDS = ""
     GDRIVE_ID = ""
-    GD_DESP = "Uploaded by Dzone"
-    AUTHOR_NAME = "Dzone"
-    AUTHOR_URL = "https://t.me/DownloaderZoneGateway"
+    GD_DESP = "Uploaded by @mchaan2_bot"
+    AUTHOR_NAME = "@mchaan2_bot"
+    AUTHOR_URL = "https://t.me/misfitdev"
     INSTADL_API = ""
     IMDB_TEMPLATE = ""
     INCOMPLETE_TASK_NOTIFIER = False
